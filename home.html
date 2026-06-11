@@ -9,23 +9,37 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <style>
+      .hero {
+        min-height: 100vh;
+        background: url("Images/backgroundImage.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .nav-link:hover {
+        color: #ffc107 !important;
+      }
+    </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg py-3">
-      <div class="container-fluid px-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow py-3">
+      <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img
             src="Images/EventLogo.png"
             alt="Logo"
-            width="65"
-            height="65"
+            width="60"
+            height="60"
             class="rounded-circle border border-2 border-light"
           />
 
           <div class="ms-3">
-            <div class="fw-bold fs-3">CVR Events</div>
-            <small class="text-light opacity-75"> Management Portal </small>
+            <h4 class="mb-0 fw-bold">CVR Events</h4>
+            <small class="text-light"> Management Portal </small>
           </div>
         </a>
 
@@ -39,26 +53,50 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="navbar-nav ms-auto gap-lg-3 fs-5">
-            <a class="nav-link active text-warning fw-semibold" href="#">
-              Home
-            </a>
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active text-warning" href="#"> Home </a>
+            </li>
 
-            <a class="nav-link fw-semibold" href="#"> Events </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Events </a>
+            </li>
 
-            <a class="nav-link fw-semibold" href="#"> Gallery </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Gallery </a>
+            </li>
 
-            <a class="nav-link fw-semibold" href="#"> Registration </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Registration </a>
+            </li>
 
-            <a class="nav-link fw-semibold" href="#"> Contact </a>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Contact </a>
+            </li>
 
-          <a href="#" class="btn btn-warning ms-lg-4 fw-semibold">
-            Register Now
-          </a>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-warning px-4 fw-semibold" href="#">
+                Register
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+
+    <section class="hero d-flex align-items-center text-center text-white">
+      <div class="container">
+        <div class="mt-5">
+          <a href="#" class="btn btn-primary btn-lg px-5 me-3">
+            Register Now
+          </a>
+
+          <a href="#" class="btn btn-outline-light btn-lg px-5">
+            Explore Events
+          </a>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
