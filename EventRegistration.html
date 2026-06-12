@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body class="bg-light mb-4">
+    <div
+      class="container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="shadow-lg p-4 bg-white rounded mt-5 pt-5"
+        style="max-width: 500px; width: 100%"
+      >
+        <form>
+          <h2 class="text-center text-primary mb-4">Registration Form</h2>
+
+          <div class="mb-3">
+            <label class="form-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="rollno">Roll Number</label>
+            <input
+              type="text"
+              name="rollno"
+              id="rollno"
+              class="form-control"
+              placeholder="Enter your roll number"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="branch">Branch</label>
+            <select name="branch" id="branch" class="form-select">
+              <option value="" selected disabled>Select Branch</option>
+              <option value="CSE">Computer Science Engineering (CSE)</option>
+              <option value="CSM">
+                Computer Science & Machine Learning (CSM)
+              </option>
+              <option value="CSD">Computer Science & Data Science (CSD)</option>
+              <option value="ECE">
+                Electronics & Communication Engineering (ECE)
+              </option>
+              <option value="EEE">
+                Electrical & Electronics Engineering (EEE)
+              </option>
+              <option value="MECH">Mechanical Engineering</option>
+              <option value="CIVIL">Civil Engineering</option>
+              <option value="IT">Information Technology (IT)</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="mobile">Mobile Number</label>
+            <input
+              type="tel"
+              name="mobile"
+              id="mobile"
+              class="form-control"
+              placeholder="Enter your mobile number"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label" for="event">Event Selection</label>
+            <select name="event" id="event" class="form-select">
+              <option value="" selected disabled>Select Event</option>
+              <option value="technical-quiz">Technical Quiz</option>
+              <option value="hackathon">Hackathon</option>
+              <option value="poster-presentation">Poster Presentation</option>
+              <option value="coding-contest">Coding Contest</option>
+              <option value="project-expo">Project Expo</option>
+              <option value="cultural-fest">Cultural Fest</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
